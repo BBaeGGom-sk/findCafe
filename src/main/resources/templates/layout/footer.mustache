@@ -1,0 +1,14 @@
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> <!-- bootstrap.js가 제이쿼리에 의존하기때문에 부트스트랩보다 먼저 호출-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- HTMl은 위에서부터 코드가 실행되기 때문에 head가 다 실행되고서 body가 실행된다.
+ 즉, head가 다 불러지지 않으면 백지 화면만 노출된다. js의 용량이 크면 클수록 body의 실행이 늦어지기 때문에
+ js는 body하단에 두어 화면이 다 그려진 뒤에 호출하는것이 좋다. (css는 반대)-->
+
+<!--index.js 추가-->
+<!-- 기본적으로 src/main/resources/static에 위치한 자바스크립트,css,이미지 등 정적 파일들은 URL에서 /로 설정됨.-->
+<!-- 현재 index.js 사용 안함
+<script src="/js/app/index.js"></script>
+-->
+
+</body>
+</html>
